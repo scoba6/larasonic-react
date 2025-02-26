@@ -16,18 +16,18 @@
     <!-- Structured Data (Example: JSON-LD Schema.org) -->
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
+            "@context": """,
             "@type": "SoftwareApplication",
-            "name": "Larasonic",
-            "url": "https://larasonic.com/",
-            "image": "https://larasonic.com/images/og.webp",
-            "description": "A modern Laravel SaaS starter kit for the RILT stack. Clone the repo, start building scalable and maintainable applications quickly.",
-            "applicationCategory": "DeveloperTool",
+            "name": "GMR SAAS",
+            "url": "{{ url()->current() }}",
+            "image": "",
+            "description": "Outil d'aide au courtage d'assurance en zone CIMA.",
+            "applicationCategory": "assurance",
             "operatingSystem": "All",
             "offers": {
                 "@type": "Offer",
                 "price": "0",
-                "priceCurrency": "USD",
+                "priceCurrency": "CFA",
                 "category": "Free"
             }
         }

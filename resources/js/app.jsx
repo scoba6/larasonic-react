@@ -7,7 +7,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers'
 import { createRoot } from 'react-dom/client'
 import '../css/app.css'
 
-const appName = import.meta.env.VITE_APP_NAME || 'Larasonic'
+const appName = import.meta.env.VITE_APP_NAME || 'GMR SAAS'
 
 // Create a global head instance with Capo plugin
 const head = createHead()

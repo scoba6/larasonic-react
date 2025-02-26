@@ -19,62 +19,62 @@ import { route } from 'ziggy-js'
 const features = Object.freeze([
   {
     icon: '🚀',
-    title: '10x Dev Experience',
-    description: 'Ship faster with opinionated Laravel Pint, maximum PHPStan level, and Rector for enhanced code quality and developer productivity.',
+    title: 'PROSPECTION',
+    description: 'Créez vos devis et ayez une visibilité sur vos futurs contrats',
   },
   {
     icon: '🐳',
-    title: 'Production Docker Ready',
-    description: 'Optimized Docker images with Laravel Octane and Sail for lightning-fast development and deployment.',
+    title: 'PRODUCTION',
+    description: 'Saisissez vos contrats et avenants.',
   },
   {
     icon: '🔑',
-    title: 'Advanced Authentication',
-    description: 'Complete authentication system with social login, and role-based access control.',
+    title: 'GESTION AU QUOTIDIEN',
+    description: 'Effectuez les renouvellements. Editez vos bordereaux périodique à la demande.',
   },
   {
-    icon: '💳',
-    title: 'Payment Ready',
-    description: 'Integrated Laravel Cashier for subscription billing and payment processing so you can focus on building your product.',
+    icon: '💰',
+    title: 'COMPTABILITE',
+    description: 'Gérez vos encaissements de quittances. Suivez vos commissions.',
   },
   {
     icon: '🌐',
-    title: 'API Ready',
-    description: 'RESTful API endpoints with Laravel Sanctum authentication and comprehensive documentation.',
+    title: 'TIARD',
+    description: 'Gestion Automobile, Flotte, Incendie, Accidents, Risques Divers.',
   },
   {
-    icon: '🎨',
-    title: 'Customizable UI',
-    description: 'Built with shadcn/ui components, making UI customization a breeze. Easily modify themes, styles, and components to match your brand.',
+    icon: '⛑️',
+    title: 'SANTE',
+    description: 'Gestion des polices maladie.',
   },
   {
-    icon: '🧠',
-    title: 'AI Integration Ready',
-    description: 'Pre-configured LLM integrations for OpenAI, Anthropic, and more. Build AI-powered features into your app with minimal setup.',
+    icon: '⚠️',
+    title: 'SINISTRES',
+    description: 'Suivi de la sinistralité de vos clients en temps reel.',
   },
   {
     icon: '📊',
-    title: 'FilamentPHP Admin',
-    description: 'Beautiful admin panel powered by FilamentPHP with CRUD operations, charts, and detailed analytics.',
+    title: 'REPORTING & TABLEAUX DE BORD',
+    description: 'Gardez à tout moment une vue d’ensemble sur votre activité.',
   },
   {
-    icon: '✨',
-    title: 'Evolving Features',
-    description: 'This is just the beginning. Regular updates bring new features, integrations, and improvements to supercharge your development.',
+    icon: '🎁',
+    title: 'AVANTAGES',
+    description: 'Entièrement paramétrable. Multi compagnies, Multi agences. Multi utilisateurs. Tous les tarifs compagnie en ligne.',
   },
 ])
 
 const pricingFeatures = Object.freeze([
-  'Production-ready Docker setup',
+  /*  'Production-ready Docker setup',
   'Advanced authentication system',
   'AI Integrations',
   'Payment integration ready',
   'API endpoints with Sanctum',
-  'Comprehensive documentation',
+  'Comprehensive documentation', */
 ])
 
 const faqItems = Object.freeze([
-  {
+/*   {
     value: 'item-1',
     title: 'Is Larasonic really free?',
     content: 'Yes! Larasonic is completely free and open source under the MIT license. You can use it for personal or commercial projects without any restrictions. Feel free to star the repo for showing your intrest.',
@@ -88,7 +88,7 @@ const faqItems = Object.freeze([
     value: 'item-3',
     title: 'Why should I sponsor?',
     content: 'Sponsoring helps ensure the project\'s long-term sustainability. Your support enables continued maintenance, new features, and improvements that benefit the entire community.',
-  },
+  }, */
 ])
 
 const githubUrl = 'https://github.com/shipfastlabs/larasonic-react'
@@ -109,7 +109,7 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
             {/* Badge */}
             <div className="mb-8 inline-flex justify-center">
               <Badge variant="outline" className="rounded-full border bg-primary/10 px-4 py-1 text-xs sm:text-sm">
-                ✨ Using PHP 8.3+, Laravel 11, Inertia 2.0 and Tailwind CSS 4+
+                ✨ SIMPLE ET INTUITIF
               </Badge>
             </div>
 
@@ -118,9 +118,9 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
                 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
                 style={{ contain: 'layout paint' }}
               >
-                <span className="block text-foreground">Modern Laravel</span>
+                <span className="block text-foreground">GMR SAAS</span>
                 <span className="mt-2 block bg-linear-to-r from-red-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
-                  SaaS Starter Kit
+                  Outil d'aide au courtage d'assurance en zone CIMA
                 </span>
               </h1>
             </div>
@@ -129,11 +129,10 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
               className="mx-auto mt-6 max-w-2xl text-center text-base text-muted-foreground sm:text-lg md:text-xl"
               style={{ contain: 'layout paint' }}
             >
-              Ship faster production-ready applications 10x faster with starter kit powered by Laravel Jetstream, Inertia V2,
-              and Shadcn/ui.
+              Gérez votre activité de courtage d'assurance en toute simplicité et en toute sécurité partout oú vous êtes.
             </p>
 
-            <div className="mt-10 flex items-center justify-center gap-4 flex-row">
+            {/*  <div className="mt-10 flex items-center justify-center gap-4 flex-row">
               <Button asChild size="lg" className="w-full sm:w-auto">
                 <a href="https://larasonic.com/dashboard" target="_blank" rel="noreferrer">
                   View Demo
@@ -145,11 +144,11 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
                   Github
                 </a>
               </Button>
-            </div>
+            </div> */}
 
             <div className="mt-16 sm:mt-24">
-              <p className="text-sm text-muted-foreground">Trusted by developers worldwide</p>
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+              <p className="text-sm text-muted-foreground">Ils nous font confiance:</p>
+              {/*  <div className="mt-4 flex flex-wrap items-center justify-center gap-6 sm:gap-8">
                 <Icon
                   icon="logos:laravel"
                   className="size-8 opacity-75 grayscale transition-all hover:opacity-100 hover:grayscale-0"
@@ -166,7 +165,7 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
                   icon="logos:tailwindcss-icon"
                   className="size-8 opacity-75 grayscale transition-all hover:opacity-100 hover:grayscale-0"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -175,10 +174,10 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
         </section>
         <section id="features" className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <h2 className="text-center text-2xl font-bold tracking-tight sm:text-4xl">
-            Features ✨
+            FONCTIONNALITES ✨
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
-            Everything you need to ship faster to production without any hassle.
+            Tout ce dont vous avez besoin pour la gestion de votre cabinet de courtage d'assurance.
           </p>
 
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -191,7 +190,7 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
               />
             ))}
           </div>
-          <div className="mt-6 flex justify-center gap-2">
+          {/*  <div className="mt-6 flex justify-center gap-2">
             <Button asChild>
               <a href="https://docs.larasonic.com" target="_blank" rel="noopener noreferrer">
                 <Icon icon="lucide:book-open" className="size-4" aria-hidden="true" />
@@ -204,19 +203,19 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
                 Roadmap
               </a>
             </Button>
-          </div>
+          </div> */}
         </section>
 
         <section id="pricing" className="border-t">
           <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <h2 className="text-center text-2xl font-bold tracking-tight sm:text-4xl">Proudly Open Source 🤑</h2>
+              <h2 className="text-center text-2xl font-bold tracking-tight sm:text-4xl">Toujours à jour... ✅</h2>
               <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
-                Larasonic is and will always be open source. No hidden fees, no premium features.
+                Restez à jour avec les dernières fonctionnalités et améliorations de l'outil et des technologies du moment...
               </p>
             </div>
 
-            <PricingCard
+            {/* <PricingCard
               className="mx-auto mt-16"
               features={pricingFeatures}
               price={0}
@@ -248,10 +247,10 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
                   </div>
                 </div>
               )}
-            />
+            /> */}
 
             {/* FAQ Section */}
-            <div className="mx-auto mt-16 text-center">
+            {/*       <div className="mx-auto mt-16 text-center">
               <h2 className="text-2xl font-bold">
                 Frequently Asked Questions
               </h2>
@@ -267,7 +266,7 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
                   </AccordionItem>
                 ))}
               </Accordion>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -277,27 +276,27 @@ export default memo(({ canLogin, canRegister, seo = null }) => {
             <div className="rounded-2xl px-6 py-12 sm:p-16">
               <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-6xl">
-                  Ready to ship faster?
+                  Prêt à faire passer votre cabinet de courtage d'assurance dans une autre dimension digitale ?
                 </h2>
-                <p className="mx-auto mt-4 max-w-xl text-lg">
+                {/*    <p className="mx-auto mt-4 max-w-xl text-lg">
                   You're already blazing fast with Laravel.
                   <br />
                   {' '}
                   Larasonic is about to make your shipping speed
                   supersonic. 🚀
-                </p>
+                </p> */}
                 <div className="mt-8 flex justify-center gap-4">
                   <Button asChild>
                     <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                      View on GitHub
+                      Contactez nous!
                     </a>
                   </Button>
                 </div>
               </div>
             </div>
-            <div className="mx-auto w-full sm:w-2/3 items-center justify-center">
+            {/*    <div className="mx-auto w-full sm:w-2/3 items-center justify-center">
               <Terminal />
-            </div>
+            </div> */}
           </div>
         </section>
       </main>

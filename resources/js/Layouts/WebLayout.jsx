@@ -4,9 +4,9 @@ import { Link, usePage } from '@inertiajs/react'
 import { useEffect, useState } from 'react'
 
 const navLinks = [
-  { label: 'Features', href: '/#features', external: false },
-  { label: 'Pricing', href: '/#pricing', external: false },
-  { label: 'Docs', href: 'https://docs.larasonic.com/introduction', external: true },
+  { label: 'Fonctionnalités', href: '/#features', external: false },
+  /* { label: 'Tarifs', href: '/#pricing', external: false },
+  { label: 'Docs', href: 'https://docs.larasonic.com/introduction', external: true }, */
 ]
 
 const githubUrl = 'https://github.com/shipfastlabs/larasonic-react'
@@ -67,9 +67,9 @@ export default function WebLayout({ children }) {
                       <Button variant="outline" asChild>
                         <Link href="/login" prefetch="mount">Login</Link>
                       </Button>
-                      <Button variant="outline" asChild>
+                      {/*  <Button variant="outline" asChild>
                         <Link href="/register" prefetch="mount">Register</Link>
-                      </Button>
+                      </Button> */}
                     </>
                   )
                 : (
@@ -84,7 +84,7 @@ export default function WebLayout({ children }) {
                 icon={mode === 'dark' ? 'lucide:sun' : 'lucide:moon'}
               />
             </Button>
-            <a
+            {/* <a
               href={githubUrl}
               target="_blank"
               rel="noreferrer"
@@ -92,7 +92,7 @@ export default function WebLayout({ children }) {
               aria-label="GitHub"
             >
               <Icon icon="mdi:github" className="h-5 w-5" />
-            </a>
+            </a> */}
             <Button
               className="md:hidden"
               variant="ghost"
@@ -126,9 +126,9 @@ export default function WebLayout({ children }) {
                       <Button variant="outline" asChild className="w-full" onClick={toggleMenu}>
                         <Link href="/login" prefetch="mount">Login</Link>
                       </Button>
-                      <Button variant="outline" asChild className="w-full" onClick={toggleMenu}>
+                      {/*      <Button variant="outline" asChild className="w-full" onClick={toggleMenu}>
                         <Link href="/register" prefetch="mount">Register</Link>
-                      </Button>
+                      </Button> */}
                     </>
                   )
                 : (
@@ -136,7 +136,7 @@ export default function WebLayout({ children }) {
                       <Link href="/dashboard" prefetch="mount">Dashboard</Link>
                     </Button>
                   )}
-              <a
+              {/*  <a
                 href={githubUrl}
                 target="_blank"
                 rel="noreferrer"
@@ -145,7 +145,7 @@ export default function WebLayout({ children }) {
               >
                 <Icon icon="mdi:github" className="h-5 w-5" />
                 <span>GitHub</span>
-              </a>
+              </a> */}
             </nav>
           </div>
         )}
@@ -159,49 +159,11 @@ export default function WebLayout({ children }) {
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm flex items-center gap-2 text-center sm:text-left">
               <Icon icon="lucide:rocket" className="size-6" aria-hidden="true" />
-              Crafted by
-              <a className="underline" href={twitterUrl} target="_blank" rel="noopener noreferrer">
-                Pushpak.
+              Powerd by
+              <a className="underline" href="#" target="_blank" rel="noopener noreferrer">
+                OXILYUM
               </a>
-              <span>
-                Hosted On
-                {' '}
-                <a
-                  className="underline"
-                  href="https://sevalla.com/?ref=larasonic"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sevalla
-                </a>
-                ❤️
-              </span>
             </p>
-            <div className="flex gap-4">
-              <Icon
-                className="text-muted-foreground cursor-pointer"
-                icon={mode === 'dark' ? 'lucide:sun' : 'lucide:moon'}
-                onClick={toggleMode}
-              />
-              <a
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground"
-                aria-label="GitHub"
-              >
-                <Icon icon="mdi:github" className="h-5 w-5" aria-hidden="true" />
-              </a>
-              <a
-                href={twitterUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground"
-                aria-label="Twitter"
-              >
-                <Icon icon="ri:twitter-x-line" className="h-5 w-5" aria-hidden="true" />
-              </a>
-            </div>
           </div>
         </div>
       </footer>

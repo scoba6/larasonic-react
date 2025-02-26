@@ -1,4 +1,4 @@
-# Modern Laravel SaaS Starter Kit
+# GMR SAAS
 ✨ Using PHP 8.3+, Laravel 11, Inertia 2.0 and Tailwind CSS 4+
 Ship faster production-ready applications 10x faster with starter kit powered by Laravel Jetstream, Inertia V2, and Shadcn/ui.
 
